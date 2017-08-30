@@ -8,6 +8,10 @@ body{
   color: white;
 }
 
+div{
+  display: block;
+}
+
 #top{
   display: flex;
   background-color: black;
@@ -17,10 +21,28 @@ body{
   padding-left: 7rem;
   margin-top: 0;
   align-items: center;
-
 }
 
 #top img{
  padding-right: 1rem;
  height: 1.5rem;
+}
+
+.largebanner{
+  background-image: url("../images/moto.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 30rem;
+  margin: 0 auto;
+}
+
+.blackbox{
+  /*in order to position the black box in the middle of the main div, the moto pciture i need to use relative position and top property*/
+  position: relative;
+  top: 9rem;
+  padding: 2rem 3rem;
+  width: 25rem;
+  background-color: black;
+  margin-left: 7rem; /*in order to move the box towards the center of the main div, I use margin-left.
 }
