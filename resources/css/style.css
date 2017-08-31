@@ -18,7 +18,6 @@ div{
   width: 100%;
   height: 4rem;
   font-size: 1rem;
-  padding-left: 7rem;
   margin-top: 0;
   align-items: center;
 }
@@ -26,15 +25,19 @@ div{
 #top img{
  padding-right: 1rem;
  height: 1.5rem;
+ padding-left: 7rem;
 }
 
 .largebanner{
+  display: flex
+  width: 100%;
   background-image: url("../images/moto.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 30rem;
   margin: 0 auto;
+
 }
 
 .blackbox{
@@ -44,5 +47,20 @@ div{
   padding: 2rem 3rem;
   width: 25rem;
   background-color: black;
-  margin-left: 7rem; /*in order to move the box towards the center of the main div, I use margin-left.
+  margin-left: 7rem; /*in order to move the box towards the center of the main div, I use margin-left.*/
+}
+
+nav{
+background-color: firebrick;
+}
+
+
+nav ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  list-style: none;
+  padding: 2rem 7rem;
+  margin-top: 0;
 }
