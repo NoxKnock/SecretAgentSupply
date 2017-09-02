@@ -1,1 +1,130 @@
+html{
+  font-size: 16px;
+}
 
+body{
+  font-family: helvetica;
+  margin: 0; /*always add the zero margin in order to have it reset for all divs*/
+}
+
+.div{
+  display: block;
+}
+.container  {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.Company_Logo_Name{
+  background-color: black;
+  color: white;
+}
+
+/*In order to have the logo and the text centeralized we use the below porperties, aligning items to center within the div.*/
+.Company_Logo_Name .container{
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 0 0.8rem 0.5em;
+  width: 100%;
+}
+
+/* Determining the padding from the Company name and the height of the Logo which now fits well together with the text. */
+.Company_Logo_Name img{
+  padding-right: 1rem;
+  height: 1.5rem;
+}
+
+/*all the background-picture settings inn one div, alos not that I have the container with the max-div inside of this div in order to make it responsive - later...*/
+.motobanner{
+  height: 25rem;
+  background-image: url("../images/moto.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*Position relative together with the top property positions the blackbox, also in order to avoid the white gap between then company name and the banner, you must add padding, otherwise it wont work*/
+.blackbox{
+  background-color: black;
+  color: white;
+  position: relative;
+  top: 9rem;
+  width: 20rem;
+  padding: 2em 3em;
+}
+
+/*background color and fontcolor for the nav bar*/
+nav{
+  background-color: firebrick;
+  color: white;
+}
+
+/*So here we are using a flex continer, where we center the items on one straight line, and use the spacebetween to have equally as big space between*/
+nav ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  list-style: none;
+}
+
+.products{
+  display: flex;
+  justify-content: space-between;
+  margin: 3em 0 0;
+}
+
+.gadget{ /* this div includes both the image and the description, this is important to know. */
+  width: 30%;
+}
+
+.gadget_image{ /*this is only the picture div and what's around it. We center the picture of that that div and align all pics on same line*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid black;
+  height: 9rem; /*you need height in order for the items to center horizontally of course */
+  padding: 2em 0; /*the padding will create space between the picture and the border*/
+}
+
+.gadget_image img{
+  max-width: 8rem;
+}
+
+ .gadget_description{
+  display: block; /*initially forgot to add the block, which made it look very weird, so remember to add block in these occasions. This fills up the complete div.. you need to add such a property*/
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.company_info{
+  display: flex;
+  justify-content: space-between;
+}
+
+.info{ /*in order to have the Location and the coordiantes underneath eachother I speficy it as a column*/
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+  width: 35%;
+}
+
+.info .boxinfo {
+  display: block;
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.info span{
+  padding-top: 2rem;
+}
+
+footer{
+background-color: black;
+color: white;
+padding: 5rem 0;
+margin-top: 4em
+}
