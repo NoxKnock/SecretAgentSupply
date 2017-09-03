@@ -139,7 +139,12 @@ margin-top: 4em;
 z-index: 20;
 }
 
+
 @media only screen and (max-width: 1024px) {
+.body{
+  font-size: 12px;
+}
+
 .container{
   width: 100%;
   margin: 0 auto;
@@ -166,5 +171,36 @@ nav ul {
   margin: auto;
 
 }
+}
+
+@media only screen and (max-width: 470px){
+  body{
+    font-size: 12px;
+  }
+
+  .container{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+.motobanner{
+  height: 15rem;
+}
+
+  .blackbox{
+    width: 100%;
+    padding: 1rem 2rem;
+    top: 8.5rem; /*in order to push down blackbox to the menu as instructed i used the top porpoerty */
+  }
+
+  h4{
+    font-size: 0.77rem;
+  }
+
+  h1{
+    font-size: 1rem;
+  }
+
+
 
 }
