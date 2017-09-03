@@ -13,6 +13,7 @@ body{
 .container  {
   max-width: 960px;
   margin: 0 auto;
+  z-index: 10;
 }
 
 .Company_Logo_Name{
@@ -66,6 +67,10 @@ nav ul{
   justify-content: space-between;
   padding: 0.75rem 0;
   list-style: none;
+}
+
+.mobile_menu{ /*in order not to display anything when the size is bigger than mobile/ipad*/
+  display: none;
 }
 
 .products{
@@ -122,14 +127,44 @@ nav ul{
   padding-top: 2rem;
 }
 
-footer{
-position: absolute;
+footer{ /*the absolute positition, bottom, width and height properties are there in order to have the footer fixed at the bottom*/
+/*position: absolute;
 bottom: 0;
 width: 100%;
-height: 3rem;
+height: 3rem;*/
 background-color: black;
 color: white;
 padding: 5rem 0;
 margin-top: 4em;
+z-index: 20;
+}
+
+@media only screen and (max-width: 1024px) {
+.container{
+  width: 100%;
+  margin: 0 auto;
+}
+.gadget{
+  width: 47%;
+}
+
+.glasses{
+  display: none;
+}
+
+.info{
+  width: 35%;
+}
+
+nav ul {
+  display: none;
+}
+
+.mobile_menu{
+  display: block;
+  text-align: center;
+  margin: auto;
+
+}
 
 }
