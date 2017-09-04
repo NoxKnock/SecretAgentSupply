@@ -175,15 +175,15 @@ nav ul {
 
 @media only screen and (max-width: 470px){
   body{
-    font-size: 12px;
+    font-size: 16px;
   }
 
-  .container{
+  .container{ /*removing the 960px as we are coding for almost half that size, still want to keep the width though as well as the margin*/
     width: 100%;
     margin: 0 auto;
   }
 
-.motobanner{
+  .motobanner{/* changing height of the motobanner*/
   height: 15rem;
 }
 
@@ -201,6 +201,46 @@ nav ul {
     font-size: 1rem;
   }
 
+.gadget{ /*changing size of gadgetbox in order to only have one picture stretching over the screen*/
+  width: 90%;
+  padding-left: 1.5rem;
+}
 
+.watch{ /*wont display this item*/
+  display: none;
+}
+
+.glasses{ /*wont display this item*/
+  display: none;
+}
+
+.mobile_menu{ /*changing the normal menu, to what in the future will be a drop down menu for mobiles or ipads*/
+  display: block;
+  text-align: center;
+  margin: auto;
+  padding: 1rem 0;
+  font-size: 1.2rem;
+}
+
+.company_info{ /*will align the info below eachother isntead of next to eachother, perfect for  mobile pages */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+
+}
+
+.info span{
+  padding-top: 0;
+}
+
+.info{ /*adusting for padding of company info also, stretching the boxes out accross the screen*/
+  padding-top: 0.5rem;
+  width: 90%;
+}
+
+footer{
+  text-align: center;
+}
 
 }
